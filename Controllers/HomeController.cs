@@ -16,11 +16,7 @@ namespace Home.Controllers
             UserManager = userManager;
             context = dbContext;
         }
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
+      
         public IActionResult Index()
         {
             string id = UserManager.GetUserId(User);
